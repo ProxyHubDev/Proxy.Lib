@@ -10,4 +10,4 @@ Tab:CreateBoxToggle({
     Confirmation = false, -- Ask before activating
 })
 ```
-<img src="Assets/logolight.png#gh-light-mode-only" alt="fluent">
+<img src="Images/toggle.png" alt="toggle">
