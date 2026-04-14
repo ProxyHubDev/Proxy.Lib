@@ -1,5 +1,16 @@
 # ProxyLib
-
+<img src="Images/window.png" alt="window">
+- 👋 Hello, welcome to ProxyLib. Below you can see the components.
+- Separator
+- Tab
+- DiscordInvite
+- Paragraph
+- Toggle
+- Slider
+- Dropdown
+- Button
+- Notify
+- Menu Config
 
 ---
 - Separator
@@ -38,7 +49,7 @@ Tab:CreateDiscordInvite({
 <img src="Images/paragraph.png" alt="paragaph">
 
 ```lua
-local statusP = homeTab:CreateParagraph({
+local statusP = Tab:CreateParagraph({
     Title = "",
     Icon = "rbxassetid://", -- Your ID
     Description = "",
@@ -75,7 +86,7 @@ Tab:CreateSlider({
 <img src="Images/dropdown.png" alt="dropdown">
 
 ```lua
-homeTab:CreateDropdown({
+Tab:CreateDropdown({
     Title = "",
     Multiple = false, -- Active Case For Multiple Selection
     Default = { "" },
@@ -91,9 +102,9 @@ homeTab:CreateDropdown({
 <img src="Images/button.png" alt="button">
 
 ```lua
-homeTab:CreateButton({
-    Title = "Button",
-    Description = "Example Button",
+Tab:CreateButton({
+    Title = "",
+    Description = "",
     Confirmation = true,
     Callback = function()
     end,
@@ -105,12 +116,19 @@ homeTab:CreateButton({
 
 ```lua
 window:Notify({
-    Title = "Bem-vindo!",
-    Text = "Script carregado com sucesso.",
-    Icon = "",
+    Title = "",
+    Text = "",
+    Icon = "rbxassetid://", -- Your ID
     Duration = 5,
 })
 ```
 ---
-- Thanks For Use
+- Config Menu
+<img src="Images/config_menu.png" alt="cfg">
+---
+- Window
 <img src="Images/window.png" alt="window">
+---
+- Thanks For Use
+- Made by @zerozxk and @araujozwx
+---
