@@ -126,9 +126,12 @@ window:Notify({
 ---
 - Config Menu
 <img src="Images/config_menu.png" alt="cfg">
+
 ---
+
 - Window
 <img src="Images/window.png" alt="window">
+
 ---
 - Thanks For Use
 - Made by @zerozxk and @araujozwx
