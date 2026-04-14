@@ -132,6 +132,46 @@ window:Notify({
 - Window
 <img src="Images/window.png" alt="window">
 
+```lua
+local ProxyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ProxyHubDev/Proxy.Lib/refs/heads/main/Libary/main.lua"))()
+
+local lib = ProxyLib.new()
+
+local window = lib:CreateWindow({
+    Title = "",
+    Subtitle = "",
+    Theme = "",
+    Icon = "rbxassetid://", -- Your ID
+    Size = Vector2.new(520, 380),
+    MinSize = Vector2.new(380, 250),
+    MaxSize = Vector2.new(900, 650),
+    TitleConfig = {
+        Words = { "" }, -- Words That Will Remain in Gradient
+        Gradient = true, 
+        Colors = { Color3.fromRGB(247, 241, 141), Color3.fromRGB(245, 205, 48) },
+    },
+    FloatButton = {
+        Shape = "", -- Square or Circle
+        Color = "", -- White or Black
+        Size = 50,
+        Icon = "rbxassetid://", -- Your Id
+    },
+    Acrylic = {
+        Enabled = false,
+        Opacity = 0,
+    },
+    ConfigPanel = {
+        Enabled = true,
+        Acrylic = true,
+        Theme = true,
+        Fps = true,
+        Ping = true,
+        Profile = true,
+        HideNotify = true,
+    },
+})
+
+
 ---
 - Thanks For Use
 - Made by @zerozxk and @araujozwx
