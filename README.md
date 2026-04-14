@@ -2,7 +2,7 @@
 
 ---
 - Toggle
-- <img src="Images/toggle.png" alt="toggle">
+<img src="Images/toggle.png" alt="toggle">
 ```lua
 Tab:CreateBoxToggle({
     Title = "Toggle",
