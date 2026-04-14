@@ -114,6 +114,15 @@ Tab:CreateButton({
 ---
 - Textbox
 <img src="Images/textbox.png" alt="textbox">
+
+```lua
+Tab:CreateTextBox({
+    Title = "Username",
+    Placeholder = "Enter your name...",
+    MaxLength = 50,
+    Default = "",
+})
+```
 ---
 - Notify
 <img src="Images/notify.png" alt="notify">
