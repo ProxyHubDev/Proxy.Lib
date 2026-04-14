@@ -112,6 +112,9 @@ Tab:CreateButton({
 })
 ```
 ---
+- Textbox
+<img src="Images/textbox.png" alt="textbox">
+---
 - Notify
 <img src="Images/notify.png" alt="notify">
 
