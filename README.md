@@ -1,5 +1,6 @@
 # ProxyLib
 
+
 ---
 - Separator
 <img src="Images/separator.png" alt="separator">
@@ -100,3 +101,16 @@ homeTab:CreateButton({
 ```
 ---
 - Notify
+<img src="Images/notify.png" alt="notify">
+
+```lua
+window:Notify({
+    Title = "Bem-vindo!",
+    Text = "Script carregado com sucesso.",
+    Icon = "",
+    Duration = 5,
+})
+```
+---
+- Thanks For Use
+<img src="Images/window.png" alt="window">
