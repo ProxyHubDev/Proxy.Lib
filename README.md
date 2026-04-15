@@ -32,6 +32,13 @@ local Tab = window:CreateTab({
 })
 ```
 ---
+- Section
+<img src="Images/section.png" alt="section">
+
+```lua
+homeTab:CreateSection({ Text = "" })
+```
+---
 - Discord Invite
 <img src="Images/discordinvite.png" alt="discordinvite">
 
