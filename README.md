@@ -1,5 +1,9 @@
 # ProxyLib
 <img src="Images/window.png" alt="window">
+
+- Made by @zerozxk and @araujozwx
+- Discord : https://discord.gg/proxylib
+
 - 👋 Hello, welcome to ProxyLib. Below you can see the components.
 
 - Separator
@@ -14,13 +18,16 @@
 - Menu Config
 
 ---
+
 - Separator
 <img src="Images/separator.png" alt="separator">
 
 ```lua
 window:CreateSeparator({ Text = "" }) 
-````
+```
+
 ---
+
 - Tab
 <img src="Images/tab2.png" alt="tab2">
 
@@ -31,14 +38,18 @@ local Tab = window:CreateTab({
     Icon = "rbxassetid://", -- Your ID
 })
 ```
+
 ---
+
 - Section
 <img src="Images/section.png" alt="section">
 
 ```lua
 homeTab:CreateSection({ Text = "" })
 ```
+
 ---
+
 - Discord Invite
 <img src="Images/discordinvite.png" alt="discordinvite">
 
@@ -52,9 +63,11 @@ Tab:CreateDiscordInvite({
     Button      = "",
 })
 ```
+
 ---
+
 - Paragraph
-<img src="Images/paragraph.png" alt="paragaph">
+<img src="Images/paragraph.png" alt="paragraph">
 
 ```lua
 local statusP = Tab:CreateParagraph({
@@ -63,7 +76,47 @@ local statusP = Tab:CreateParagraph({
     Description = "",
 })
 ```
+
+You can highlight specific words in the description with custom colors, independently per paragraph:
+
+```lua
+local statusP = Tab:CreateParagraph({
+    Title = "",
+    Icon = "rbxassetid://", -- Your ID
+    Description = "Use the Hub to access Premium features of the system.",
+    DescriptionConfig = {
+        Words = {
+            { Text = "Hub",     Colors = { Color3.fromRGB(55, 110, 200) } },
+            { Text = "Premium", Colors = { Color3.fromRGB(212, 178, 48), Color3.fromRGB(175, 148, 30) }, Gradient = true },
+        },
+    },
+})
+```
+
+> Each paragraph has its own independent word color list — the same word can have a different color in another paragraph.
+
+**Paragraph Methods:**
+
+```lua
+-- Update description text (keeps existing word colors)
+statusP:SetDescription("New description text.")
+
+-- Update description text with new word colors
+statusP:SetDescription("New description text.", {
+    { Text = "New", Colors = { Color3.fromRGB(100, 200, 100) } },
+})
+
+-- Change word color config without changing the text
+statusP:SetDescriptionWords({
+    { Text = "Hub", Colors = { Color3.fromRGB(200, 80, 80) } },
+})
+
+-- Update the title
+statusP:SetTitle("New Title")
+```
+
 ---
+
 - Toggle
 <img src="Images/toggle.png" alt="toggle">
 
@@ -75,7 +128,9 @@ Tab:CreateBoxToggle({
     Confirmation = false, -- Ask before activating
 })
 ```
+
 ---
+
 - Slider
 <img src="Images/slider.png" alt="slider">
 
@@ -89,7 +144,9 @@ Tab:CreateSlider({
     end,
 })
 ```
+
 ---
+
 - Dropdown
 <img src="Images/dropdown.png" alt="dropdown">
 
@@ -105,7 +162,9 @@ Tab:CreateDropdown({
     },
 })
 ```
+
 ---
+
 - Button
 <img src="Images/button.png" alt="button">
 
@@ -118,7 +177,9 @@ Tab:CreateButton({
     end,
 })
 ```
+
 ---
+
 - Textbox
 <img src="Images/textbox.png" alt="textbox">
 
@@ -130,7 +191,9 @@ Tab:CreateTextBox({
     Default = "",
 })
 ```
+
 ---
+
 - Notify
 <img src="Images/notify.png" alt="notify">
 
@@ -142,7 +205,9 @@ window:Notify({
     Duration = 5,
 })
 ```
+
 ---
+
 - Config Menu
 <img src="Images/config_menu.png" alt="cfg">
 
@@ -189,8 +254,9 @@ local window = lib:CreateWindow({
         HideNotify = true,
     },
 })
-````
+```
+
 ---
+
 - Thanks For Use
 - Made by @zerozxk and @araujozwx
----
